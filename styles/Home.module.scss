@@ -1,0 +1,38 @@
+.vertical {
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-size: 3rem;
+    z-index: 200;
+
+    text-shadow: #7fffd4 2px 3px;
+}
+
+.homeImage {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    top:10rem;
+    right:0;
+}
+
+@media screen and (max-width:905px) {
+    .homeImage {
+        height:300px;
+        width:auto;
+    }
+}
+
+@media screen and (max-width:705px) {
+    .homeImage {
+        height:200px;
+        width:auto;
+    }
+}
+
+@media screen and (max-width:605px) {
+    .homeImage {
+        display: none;
+    }
+}
