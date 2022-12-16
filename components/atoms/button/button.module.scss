@@ -1,0 +1,27 @@
+@import '/styles/globals.scss';
+
+.primary, .secondary {
+    min-width: 5rem;
+    height: 2.2rem;
+    border-radius: 2px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+    padding: .5rem;
+    margin:.5rem;
+}
+
+.secondary {
+    background-color: $primary;
+    &:hover {
+        background-color: $accent;
+    }
+}
+.primary {
+    background-color: $accent;
+    &:hover {
+        background-color: rgb(16, 227, 61);
+    }
+}
+
+

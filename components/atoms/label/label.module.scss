@@ -1,0 +1,71 @@
+$dark:#282C34;
+$white:#fff;
+
+.label {
+    font-size: smaller;
+    font-weight: 400;
+    border-radius: 1px;
+    height: 1rem;
+    width:5.8rem;
+    margin: 1rem;
+    border: 1px solid transparent;
+    text-align: center;
+    display: flex;align-items: center;justify-content: center;
+}
+
+.react {
+    background-color: #61DAFB;
+    color: $dark;
+}
+
+.angular {
+    background-color: #D7012F;
+    color: $white;
+}
+
+.vue {
+    background-color: #3FB27F;
+    color: $white;
+}
+
+.svelte {
+    background-color: #F83A01;
+    color:$white;
+    box-sizing: border-box;
+    border: .1px solid $white;
+}   
+
+.go {
+    background-color: #0DA6D0;
+    color: $white;
+}
+
+.elixir {
+    background-color: #64466E;
+    color: $white;
+}
+
+.rust {
+    background-color: #111;
+    color: $white;
+}
+
+.aws {
+    background-color: #FF9800;
+    color: $dark;
+}
+
+.gcp {
+    background-color: #31A350;
+    color: $white;
+}
+
+.postgres {
+    background-color: #31648C;
+    color: $white;
+}
+
+.bash {
+    background-color: #111;
+    color: #017B00
+}

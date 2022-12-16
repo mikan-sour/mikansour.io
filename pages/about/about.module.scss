@@ -1,0 +1,10 @@
+$accent:#98fb98;
+.main {
+    color:#111;
+    position: absolute;
+    right:0;
+    width:70%;
+    padding-right: 4rem;
+    overflow-y: hidden;
+    text-shadow: $accent .5px .5px;
+}

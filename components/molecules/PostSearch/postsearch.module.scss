@@ -1,0 +1,41 @@
+@import '/styles/globals.scss';
+.radioButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-top: 1.25rem;
+}
+
+.labelButtonPair {
+    margin: 0 .75rem;
+    padding-top: .25rem;
+
+    input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -5.25px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -5.25px;
+        position: relative;
+        background-color: $accent;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+}

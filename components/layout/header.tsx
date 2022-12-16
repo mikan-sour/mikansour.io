@@ -1,18 +1,32 @@
 import React from "react";
-import styles from './layout.module.scss';
+import { useRouter } from "next/router";
+import Link from 'next/link';
+
+import styles from "./layout.module.scss";
 import { Red_Hat_Mono } from '@next/font/google'
 
-const gf = Red_Hat_Mono({ weight: "300" })
+const gf = Red_Hat_Mono({ weight: "300", subsets:['latin-ext','latin'] })
 
-export default function Header() {
+const options = ["home","about", "posts", "photos", "videos"];
+
+export function Header() {
+  const { pathname } = useRouter();
+  const classes = (str: string) => {
+    return pathname.substring(1) === str
+      ? [styles.link, styles.selected].join(" ")
+      : [styles.link].join(" ");
+  };
   return (
-    <header className={styles.header}>
-
-      <nav className={[gf.className,styles.nav].join(' ')}>
-        {["about", "posts", "photos", "videos"].map((label) => (
-            <a  key={label}href={`/${label}`}>{label}</a>
+    <section className={styles.navWrapper}>
+      <nav className={styles.navBasic}>
+        {options.map((label) => (
+          <Link key={label} href={label !== 'home' ? `/${label}` : '/'} className={classes(label)}>
+            {label}
+          </Link>
         ))}
       </nav>
-    </header>
+      <h1 className={[gf.className, styles.vertical].join(" ")}>蜜柑サワー</h1>
+      <p>mikansour.dev &#169;2022</p>
+    </section>
   );
 }

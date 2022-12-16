@@ -1,6 +1,8 @@
-html, body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+$primary: #eb4034;
+$primary-font: #111;
+$accent: #98fb98;
 
+$textShadow-title: $accent 2px 3px;
+$textShadow-text: $accent .3px .9px;
+
+$boxShadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;

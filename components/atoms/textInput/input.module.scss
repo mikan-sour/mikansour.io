@@ -1,0 +1,17 @@
+@import '/styles/globals.scss';
+.input {
+    height: 1.2rem;
+    padding:  .5rem;
+    color:#454545;
+    font-weight: 500;
+    box-shadow: $boxShadow;
+    // background-color: $primary;
+
+    border: #454545;
+
+    &:focus {
+        outline: none !important;
+        border:1.3px solid $accent;
+        box-shadow: 0 0 10px #BCBCBC;
+    }
+}

@@ -1,0 +1,24 @@
+@import '/styles/globals.scss';
+
+.wrapper {
+    width: 90%;
+
+    & header {
+        width: calc(100% - 10rem);
+        height: 4rem;
+        position: fixed;
+        top:0;
+
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        
+    }
+
+    & .title {
+        text-shadow: $textShadow-text;
+        font-size: 2rem;
+        margin-left: .5rem;
+    }
+
+}
